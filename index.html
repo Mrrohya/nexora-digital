@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora Digital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: "#3B82F6",
+            darkbg: "#0F172A"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-darkbg text-white font-poppins">
+
+  <!--Navbar-->
+  <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Nexora <span class="text-primary">Digital</span></h1>
+
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="#" class="hover:text-primary transition">Home</a>
+      <a href="services.html" class="hover:text-primary transition">Services</a>
+      <a href="about.html" class="hover:text-primary transition">About</a>
+      <a href="contact.html" class="hover:text-primary transition">Contact</a>
+    </nav>
+
+    <a href="getstarted.html"
+      class="hidden md:inline-block bg-gradient-to-r from-blue-500 to-purple-500 px-5 py-2 rounded-full font-semibold hover:scale-105 transition">
+      Get Started
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-28 px-6">
+    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+      Where Brands <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">Go
+        Next</span>.
+    </h2>
+
+    <p class="text-gray-400 max-w-2xl mx-auto mb-10 text-lg">
+      We help ambitious businesses scale with data-driven digital marketing strategies.
+    </p>
+
+    <div class="flex justify-center gap-6">
+      <a href="strategy-call.html"
+        class="bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+        Free Strategy Call
+      </a>
+      <a href="services.html" class="border border-gray-600 px-8 py-3 rounded-full hover:bg-gray-800 transition">
+        View Services
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-gray-900 py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl md:text-4xl font-bold mb-16">Our Services</h3>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="bg-gray-800 p-8 rounded-2xl hover:-translate-y-3 transition">
+          <h4 class="text-xl font-semibold mb-4">Performance Marketing</h4>
+          <p class="text-gray-400 text-sm">ROI-focused Google & Meta ads that drive real revenue growth.</p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-2xl hover:-translate-y-3 transition">
+          <h4 class="text-xl font-semibold mb-4">SEO Optimization</h4>
+          <p class="text-gray-400 text-sm">Rank higher, get more traffic, and convert visitors into customers.</p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-2xl hover:-translate-y-3 transition">
+          <h4 class="text-xl font-semibold mb-4">Social Media Strategy</h4>
+          <p class="text-gray-400 text-sm">Build powerful brand presence and audience engagement.</p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-2xl hover:-translate-y-3 transition">
+          <h4 class="text-xl font-semibold mb-4">Branding & Design</h4>
+          <p class="text-gray-400 text-sm">Modern brand identity that stands out in competitive markets.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 text-center px-6">
+    <h3 class="text-3xl md:text-4xl font-bold mb-6">
+      Ready To Scale Your Business?
+    </h3>
+
+    <a href="#"
+      class="bg-gradient-to-r from-blue-500 to-purple-500 px-10 py-4 rounded-full font-semibold hover:scale-105 transition">
+      Book Your Strategy Call
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-8 text-center text-gray-500 text-sm">
+    © 2026 Nexora Digital. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
