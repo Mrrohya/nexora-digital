@@ -138,18 +138,18 @@
           body: JSON.stringify(data)
         });
 
-        const result = await res.json();
+const result = await res.json();
 
-        if (result.success) {
-          alert("Message sent successfully 🚀");
-          e.target.reset();
-        } else {
-          alert("Error: " + result.error);   // 👈 IMPORTANT
-        }
-      } catch (err) {
-        console.error("FRONTEND ERROR:", err);
-        alert("Error: " + err.message);
-      }
+if (result.success) {
+  alert("Message sent successfully 🚀");
+  e.target.reset();
+} else {
+  alert("Error: " + result.error);   // 👈 IMPORTANT
+}
+}catch (err) {
+  console.error("FRONTEND ERROR:", err);
+  alert("Error: " + err.message);
+}
     });
   </script>
 </body>
