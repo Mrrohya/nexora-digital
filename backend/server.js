@@ -33,16 +33,16 @@ app.post("/contact", async (req, res) => {
     });
 
     await transporter.sendMail({
-      from: email,
+      from: process.env.EMAIL_USER,   // ✅ your Gmail
       to: process.env.EMAIL_USER,
+      replyTo: email,                 // ✅ user email here
       subject: "New Lead from Nexora Digital",
       html: `<h2>New Inquiry</h2>
-             <p><strong>Name:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Service:</strong> ${service}</p>
-             <p><strong>Message:</strong> ${message}</p>`,
+         <p><strong>Name:</strong> ${name}</p>
+         <p><strong>Email:</strong> ${email}</p>
+         <p><strong>Service:</strong> ${service}</p>
+         <p><strong>Message:</strong> ${message}</p>`,
     });
-
     res.status(200).json({ success: true });
   } catch (error) {
     console.error("Error:", error);
